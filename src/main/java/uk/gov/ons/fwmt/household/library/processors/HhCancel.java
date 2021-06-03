@@ -13,10 +13,10 @@ import uk.gov.ons.census.fwmt.common.processor.ProcessorKeyHh;
 import uk.gov.ons.census.fwmt.common.rm.dto.ActionInstructionType;
 import uk.gov.ons.census.fwmt.common.rm.dto.FwmtCancelActionInstruction;
 import uk.gov.ons.census.fwmt.events.component.GatewayEventManager;
-import uk.gov.ons.fwmt.routing.http.comet.CometRestClient;
-import uk.gov.ons.fwmt.routing.service.GatewayCacheService;
-import uk.gov.ons.fwmt.routing.service.RoutingValidator;
-import uk.gov.ons.fwmt.routing.service.converter.HhCancelConverter;
+import uk.gov.ons.fwmt.household.library.http.comet.CometRestClient;
+import uk.gov.ons.fwmt.household.library.service.GatewayCacheService;
+import uk.gov.ons.fwmt.household.library.service.RoutingValidator;
+import uk.gov.ons.fwmt.household.library.service.converter.HhCancelConverter;
 
 import java.time.Instant;
 
