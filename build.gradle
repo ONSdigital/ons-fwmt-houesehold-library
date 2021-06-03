@@ -1,4 +1,4 @@
-import com.github.spotbugs.SpotBugsTask
+//import com.github.spotbugs.SpotBugsTask
 
 buildscript {
     ext {
@@ -33,7 +33,7 @@ plugins {
 
     // Build Tools
     id 'jacoco'
-    id 'com.github.spotbugs' version '3.0.0'
+//    id 'com.github.spotbugs' version '3.0.0'
     id 'com.github.psxpaul.execfork' version '0.1.8'
     id 'com.jfrog.artifactory' version '4.13.0'
     id 'org.ajoberstar.grgit' version '3.0.0'
@@ -87,7 +87,7 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation 'com.github.spotbugs:spotbugs-annotations:4.0.1'
+//    implementation 'com.github.spotbugs:spotbugs-annotations:4.0.1'
 
     // Custom Libraries
     compile 'uk.gov.ons.census.fwmt:census-fwmt-canonical:1.0.17-RELEASE'
@@ -267,13 +267,13 @@ test.finalizedBy(project.tasks.jacocoTestReport)
 
 check.dependsOn jacocoTestReport
 
-spotbugs {
-    toolVersion = '3.1.12'
-}
+//spotbugs {
+//    toolVersion = '3.1.12'
+//}
 
-tasks.withType(SpotBugsTask) {
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
-}
+//tasks.withType(SpotBugsTask) {
+//    reports {
+//        xml.enabled = false
+//        html.enabled = true
+//    }
+//}
